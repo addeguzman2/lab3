@@ -70,7 +70,7 @@ body {
         $result = $connection->query($sql);
 
         if (!$result) {
-            die("Invalid query: " . $conn->error);
+            die("Invalid query: " . $connection->error);
         }
 
         while($row = $result->fetch_assoc()){
