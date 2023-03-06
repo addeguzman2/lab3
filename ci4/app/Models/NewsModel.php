@@ -6,7 +6,10 @@ use CodeIgniter\Model;
 
 class NewsModel extends Model
 {
-    protected $table = 'news';
+    protected $table = 'addeguzman2_news';
+
+    protected $allowedFields = ['title', 'slug', 'body'];
+
     public function getNews($slug = false)
     {
         if ($slug === false) {
@@ -15,6 +18,5 @@ class NewsModel extends Model
 
         return $this->where(['slug' => $slug])->first();
     }
-
 
 }

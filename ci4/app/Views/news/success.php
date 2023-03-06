@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>News</title>
+<title>Success!</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
-<body">
+<body>
 
 
-<h2><?= esc($news['title']) ?></h2>
-<p><?= esc($news['body']) ?></p>
+<p style="font-size:30px">News item created successfully.</p>
 
-
-
-
+   
 </body>
 </html>

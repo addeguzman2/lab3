@@ -77,4 +77,3 @@ class News extends BaseController
 
 
 }		
-	
