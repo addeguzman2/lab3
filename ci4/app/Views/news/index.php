@@ -25,7 +25,7 @@
         <div class="main">
             <?= esc($news_item['body']) ?>
         </div>
-        <p><u><a href="/lab3/ci4/public/news/<?= esc($news_item['slug'], 'url') ?>">View article</a></u></p>
+        <p><u><a href="/~addeguzman2/lab3/ci4/public/news/<?= esc($news_item['slug'], 'url') ?>">View article</a></u></p>
 
     <?php endforeach ?>
 
