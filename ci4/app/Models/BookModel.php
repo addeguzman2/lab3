@@ -8,15 +8,7 @@ class BookModel extends Model
 {
     protected $table = 'addeguzman2_gigs';
 
-    protected $allowedFields = ['name', 'email', 'venue', 'date', 'details'];
+    protected $allowedFields = ['fname', 'email', 'venue', 'edate', 'details'];
 
-    public function getNews($slug = false)
-    {
-        if ($slug === false) {
-            return $this->findAll();
-        }
-
-        return $this->where(['slug' => $slug])->first();
-    }
 
 }

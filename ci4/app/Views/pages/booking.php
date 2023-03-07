@@ -70,39 +70,26 @@ function test_input($data) {
 ?>
 
 <h2>Gig Details:</h2>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
+<form method="post" action="<?=base_url('/book/add') ?>"> 
 <?= csrf_field() ?> 
 <div class="form-row">
     <div class="col">
-      <input type="text" class="form-control" placeholder="Enter Your Name" name="name" value="<?= set_value('name') ?>">
+      <input type="text" class="form-control" placeholder="Enter Your Name" name="name">
     </div>
     <div class="col">
-      <input type="text" class="form-control" placeholder="Email" name="email" value="<?= set_value('email') ?>">
+      <input type="text" class="form-control" placeholder="Email" name="email">
     </div>
   </div>
   <div class="form-group">
     <label for="formGroupExampleInput2"></label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Venue" name="venue" value="<?= set_value('venue') ?>">
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Venue" name="venue">
     <label for="formGroupExampleInput2"></label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Date" name="edate" value="<?= set_value('date') ?>">
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Date" name="edate">
     <label for="formGroupExampleInput2"></label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Event Title" name="details" value="<?= set_value('details') ?>">
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Event Title" name="details">
   </div>
-  <button type="submit" class="btn btn-light">Submit</button>
+  <button type="submit" class="btn btn-light" value="book a gig">Submit</button>
 </form>
-
-<?php
-echo "<h2>Your Input:</h2>";
-echo $fname;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $venue;
-echo "<br>";
-echo $edate;
-echo "<br>";
-echo $details;
-?>
 
 
     </div>
